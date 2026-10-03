@@ -5,7 +5,9 @@ Applied Linear Regression to predict MLB team wins using batting and pitching st
 
 ## Team Project
 This was a group project for the York University Big Data Analytics Certificate (2024).
-My contributions: [e.g., building the regression model, evaluating performance]
+
+My contributions: I worked with my team on all stages of the project, including data preparation, analysis, and presenting findings.
+
 In 2026, I re-ran and improved the analysis independently, standardizing the features before comparing coefficients, which corrected the feature importance findings.
 
 ## Tools Used
