@@ -1,36 +1,35 @@
-# Baseball Statistical Modeling — Linear Regression
-## York University — Big Data Analytics Certificate (2024)
-
-**Author:** Lalita  
-**Tools:** Python, Pandas, Scikit-learn, Statsmodels, Matplotlib  
-**Dataset:** Moneyball MLB Statistics 1962-2012 (1,232 records)  
+# Baseball Statistical Modeling - Linear Regression
 
 ## Project Overview
-Linear Regression model to predict MLB team wins using batting 
-and pitching statistics from the famous Moneyball dataset 
-covering 50 years of Major League Baseball data.
+Applied Linear Regression to predict MLB team wins using batting and pitching statistics from the Moneyball dataset (1,232 team seasons, 1962-2012). Completed as part of the York University Big Data Analytics Certificate (2024).
+
+## Tools Used
+- Python
+- Pandas
+- Scikit-learn (Linear Regression, StandardScaler)
+- Matplotlib
+- Seaborn
 
 ## Model Performance
 | Metric | Score |
 |---|---|
 | MAE | 3.24 wins |
 | RMSE | 4.04 wins |
-| R2 Score | 0.8680 (86.8% accuracy) |
+| R² Score | 0.868 (explains 86.8% of the variation in wins) |
 
-## Key Findings
-- OBP is strongest predictor of wins
-- SLG positively impacts wins
-- BA alone is a weak predictor
-- Model predicts wins within ~4 games
+## Key Insights
+![Baseball Dashboard](baseball_dashboard.png)
 
-## Technologies Used
-- Python
-- Pandas
-- Scikit-learn
-- Statsmodels
-- Matplotlib
-- Linear Regression
+1. Runs Allowed (RA) has the strongest effect on wins, so preventing runs matters most
+2. Runs Scored (RS) is the second strongest driver of wins
+3. Once runs are in the model, OBP, SLG, and BA add very little, because they mainly affect wins by producing runs
+4. Predictions are off by about 3 wins on average
 
-## Links
-- 🔗 Kaggle: kaggle.com/lalitacanada
-- 💼 LinkedIn: linkedin.com/in/lalita-lalita-1778672a3
+## Method Note
+Features were standardized before comparing coefficients, because runs (hundreds per season) and percentages (around 0.300) are measured on very different scales. Comparing raw coefficients would wrongly suggest OBP is the most important feature.
+
+## Dataset
+Moneyball MLB Stats 1962-2012 from Kaggle
+
+## View Full Project on Kaggle
+https://www.kaggle.com/code/lalitacanada/baseball-statistical-modeling-linear-regression
