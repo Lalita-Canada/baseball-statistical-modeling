@@ -3,8 +3,8 @@
 ## Project Overview
 Applied Linear Regression to predict MLB team wins using batting and pitching statistics from the Moneyball dataset (1,232 team seasons, 1962-2012). Completed as part of the York University Big Data Analytics Certificate (2024).
 
-## Team Project
-This was a group project for the York University Big Data Analytics Certificate (2024).
+## About This Project
+Inspired by a regression assignment in the York University Big Data Analytics Certificate (2024). I built this notebook independently in 2026 using the public Moneyball dataset.
 
 My contributions: I worked with my team on all stages of the project, including data preparation, analysis, and presenting findings.
 
